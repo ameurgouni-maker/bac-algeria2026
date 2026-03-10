@@ -1553,6 +1553,39 @@ function calcGPA(subjects,resId,scoreId,verdId){
 
 // ===================== QUIZ =====================
 function newQuiz(){
+  const quizData = [
+
+{
+question:"في أي سنة اندلعت الثورة الجزائرية؟",
+options:["1954","1962","1945","1965"],
+answer:0
+},
+
+{
+question:"كم عدد ولايات الجزائر؟",
+options:["48","58","54","60"],
+answer:1
+},
+
+{
+question:"ما عاصمة الجزائر؟",
+options:["الجزائر","وهران","عنابة","قسنطينة"],
+answer:0
+},
+
+{
+question:"ما وحدة قياس شدة التيار الكهربائي؟",
+options:["فولت","أمبير","واط","جول"],
+answer:1
+},
+
+{
+question:"أين يحدث تركيب البروتين؟",
+options:["النواة","الريبوسومات","الميتوكوندريا","جهاز غولجي"],
+answer:1
+}
+
+];
   const q = QUIZ[Math.floor(Math.random()*QUIZ.length)];
   currentQuiz = q; quizAnswered = false;
   document.getElementById('quiz-q').textContent = q.q;
