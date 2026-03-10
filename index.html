@@ -1554,38 +1554,19 @@ function calcGPA(subjects,resId,scoreId,verdId){
 // ===================== QUIZ =====================
 function newQuiz(){
   const quizData = [
+    {q:"ما معنى كلمة الزكاة لغةً؟",
+   opts:["الصلاة","الطهارة والنماء","الصوم","الحج"],
+   ans:1,
+   m:"☪️ إسلامية",
+   exp:"الزكاة لغةً تعني الطهارة والنماء"},
 
-{
-question:"في أي سنة اندلعت الثورة الجزائرية؟",
-options:["1954","1962","1945","1965"],
-answer:0
-},
+  {q:"متى فُتحت الجزائر؟",
+   opts:["1830","1832","1834","1840"],
+   ans:0,
+   m:"📚 تاريخ",
+   exp:"دخل الفرنسيون الجزائر في 5 يوليو 1830"},
 
-{
-question:"كم عدد ولايات الجزائر؟",
-options:["48","58","54","60"],
-answer:1
-},
-
-{
-question:"ما عاصمة الجزائر؟",
-options:["الجزائر","وهران","عنابة","قسنطينة"],
-answer:0
-},
-
-{
-question:"ما وحدة قياس شدة التيار الكهربائي؟",
-options:["فولت","أمبير","واط","جول"],
-answer:1
-},
-
-{
-question:"أين يحدث تركيب البروتين؟",
-options:["النواة","الريبوسومات","الميتوكوندريا","جهاز غولجي"],
-answer:1
-}
-
-];
+  
   const q = QUIZ[Math.floor(Math.random()*QUIZ.length)];
   currentQuiz = q; quizAnswered = false;
   document.getElementById('quiz-q').textContent = q.q;
